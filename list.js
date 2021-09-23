@@ -52,12 +52,15 @@ const atualizarPagina = ()=>{
 const addItem = (evento) =>{
   const clickpress = evento.key;
   const text = evento.target.value;
-  if(clickpress === 'Enter'){
-    //const dados = getDados();
-    dados.push({'tarefa': text, 'status': ''});
-    //setDados(dados);
-    atualizarPagina();
-    evento.target.value = '';//limpa apos digitar
+  if(text != ''){
+    if(clickpress === 'Enter'){
+      //const dados = getDados();
+      dados.push({'tarefa': text, 'status': ''});
+      //setDados(dados);
+      atualizarPagina();
+      evento.target.value = '';//limpa apos digitar
+    }
+    return null;
   }
 }
 /**
