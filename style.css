@@ -22,7 +22,7 @@ html {
 body {
     font: bold 2rem 'Open Sans', sans-serif;
     background: url("http://institutodepsiquiatriapr.com.br/wp-content/uploads/2020/03/glenn-carstens-peters-RLw-UC03Gwc-unsplash-1.jpg");
-    background-position: top;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
